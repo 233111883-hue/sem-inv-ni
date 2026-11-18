@@ -26,9 +26,8 @@ plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 ```
 
-# ============================================================
-# 4.2. Cargar archivos fuente (TradeMap) - Identificación flexible de columnas
-# ============================================================
+## 4.2. Cargar archivos fuente (TradeMap) - Identificación flexible de columnas
+```
 import io
 import re
 import unicodedata
@@ -484,9 +483,6 @@ for year in sorted(df['year'].unique()):
 ## 4.5. Generar Gráficos analíticos
 
 ```
-# ============================================================
-# 4.5. Generar Gráficos analíticos - con selección de paleta de colores
-# ============================================================
 # Requiere las variables creadas en 4.1-4.4:
 #   df, market_evolution_top, pivot_share, pivot_value, growth_data
 # No modifica ningún cálculo: solo controla los colores de los gráficos.
